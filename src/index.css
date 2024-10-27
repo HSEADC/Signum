@@ -4,9 +4,9 @@
 @import './stylesheets/basics.scss';
 
 @import './stylesheets/index.scss';
-@import './pages/about/about.scss';
-@import './pages/interactives/interactives.scss';
+@import './pages/home/home.scss';
+@import './pages/contacts/contacts.scss';
 @import './pages/articles/articles.scss';
-@import './pages/cases/cases.scss';
+@import './pages/archive/archive.scss';
 
-@import './pages/articles/scrum/scrum.scss'
+@import './pages/articles/scrum/scrum.scss';

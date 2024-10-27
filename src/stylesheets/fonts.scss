@@ -23,6 +23,16 @@
 @font-face {
   font-family: Akzidenz;
 
+  src: local('Akzidenz RegularEX'),
+    url('../fonts/akzidenzgroteskpro_ext.otf') format('truetype');
+  font-weight: 410;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Akzidenz;
+
   src: local('Akzidenz Medium'),
     url('../fonts/akzidenzgroteskpro_mdex.ttf') format('truetype');
   font-weight: 500;
