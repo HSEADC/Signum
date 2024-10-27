@@ -1,0 +1,31 @@
+@font-face {
+  font-family: Rofora;
+
+  src: local('Rofora Italic'), local('Rofora-Italic'),
+    url('../fonts/Rofora-Italic.woff2') format('woff2'),
+    url('../fonts/Rofora-Italic.woff') format('woff'),
+    url('../fonts/Rofora-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Akzidenz;
+
+  src: local('Akzidenz Regular'),
+    url('../fonts/akzidenzgroteskpro_regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Akzidenz;
+
+  src: local('Akzidenz Medium'),
+    url('../fonts/akzidenzgroteskpro_mdex.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

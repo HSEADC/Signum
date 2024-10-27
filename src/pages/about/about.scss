@@ -1,0 +1,28 @@
+.images {
+    display: flex;
+  
+        * {
+        width: 200px;
+        height: 200px;
+        margin: 0 10px;
+        }
+    
+        .image {
+        &#bgPNG {
+            background-image: url('../../images/image.png');
+            background-position: 20%;
+        }
+    
+        &#bgJPG {
+            background-image: url('../../images/image.jpg');
+        }
+    
+        &#bgSVG {
+            background-image: url('../../images/image.svg');
+        }
+
+        &#bgWEBP{
+            background-image: url('../../images/image.webp');
+        }
+        }
+}
