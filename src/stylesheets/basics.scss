@@ -1,10 +1,62 @@
 * {
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
   box-sizing: border-box;
 }
 
 html,
 body {
   height: 100%;
+<<<<<<< HEAD
+}
+
+body {
+  background-color: #d2ffd9;
+  font-family: 'Rubik', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+.images {
+  display: flex;
+
+  * {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+  }
+
+  .image {
+    &#bgPNG {
+      background-image: url('../images/image.png');
+    }
+
+    &#bgJPG {
+      background-image: url('../images/image.jpg');
+    }
+
+    &#bgSVG {
+      background-image: url('../images/image.svg');
+    }
+  }
+}
+=======
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100%;
+  }
+  
+  body, h1 {
+    font-family: Rofora, serif;
+    font-size: 24px;
+    font-weight: 400;
+  }
+>>>>>>> master
+=======
   scrollbar-color: rgb(186 220 110) rgb(255 255 255 / 0%);
   scrollbar-width: thin;
 }
@@ -15,3 +67,4 @@ h1 {
   font-size: 24px;
   font-weight: 400;
 }
+>>>>>>> master

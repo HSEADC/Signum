@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+body.index {
+=======
 body {
   color: #fff;
   width: 100vw;
@@ -40,10 +43,28 @@ body {
 
 .all {
   color: #000;
+>>>>>>> master
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
+
+  & > div,
+  & > a {
+    margin: 10px 0;
+  }
+}
+
+h1,
+h2 {
+  font-weight: 600;
+}
+
+p,
+a {
+  font-weight: 400;
+=======
   z-index: 1;
 }
 .pochta {
@@ -99,6 +120,7 @@ body {
   font-style: normal;
   font-size: 35px;
   text-align: center;
+>>>>>>> master
 }
 
 a {

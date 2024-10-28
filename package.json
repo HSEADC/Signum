@@ -1,4 +1,15 @@
 {
+<<<<<<< HEAD
+  "name": "static-site-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Anna Komkova <ann.komkova98@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack serve --open --config webpack.dev.js",
+    "watch": "webpack --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
+=======
   "name": "njb_study",
   "version": "1.0.0",
   "main": "index.js",
@@ -8,13 +19,17 @@
     "start": "webpack serve --open --config config/webpack.dev.js",
     "watch": "webpack --config config/webpack.dev.js",
     "build": "webpack --config config/webpack.prod.js"
+>>>>>>> master
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
     "@babel/plugin-proposal-class-properties": "^7.18.6",
     "@babel/preset-env": "^7.25.4",
     "@babel/preset-react": "^7.24.7",
+<<<<<<< HEAD
+=======
     "@yushijinhun/three-minifier-webpack": "^0.4.0",
+>>>>>>> master
     "autoprefixer": "^10.4.20",
     "babel-loader": "^9.2.1",
     "copy-webpack-plugin": "^12.0.2",
@@ -31,15 +46,21 @@
     "postcss-preset-env": "^10.0.3",
     "sass": "^1.78.0",
     "sass-loader": "^16.0.1",
+<<<<<<< HEAD
+=======
     "style-dictionary": "^4.1.2",
     "style-loader": "^4.0.0",
+>>>>>>> master
     "webpack": "^5.94.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.1.0",
     "webpack-merge": "^6.0.1"
+<<<<<<< HEAD
+=======
   },
   "dependencies": {
     "gsap": "^3.12.5",
     "three": "^0.169.0"
+>>>>>>> master
   }
 }

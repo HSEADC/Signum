@@ -1,4 +1,13 @@
 import './index.css'
+<<<<<<< HEAD
+import jpg from './images/image.jpg'
+
+document.addEventListener('DOMContentLoaded', () => {
+  const image = new Image()
+  image.src = jpg
+  document.querySelector('.images').appendChild(image)
+})
+=======
 
 const form = document.getElementById("form");
   
@@ -30,3 +39,4 @@ async function handleSubmit(event) {
   });
 }
 form.addEventListener("submit", handleSubmit)
+>>>>>>> master

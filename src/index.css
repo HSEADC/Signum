@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+@import 'stylesheets/reset.scss';
+@import 'stylesheets/vars.scss';
+@import 'stylesheets/fonts.scss';
+@import 'stylesheets/basics.scss';
+@import 'stylesheets/index.scss';
+=======
 @import './stylesheets/reset.scss';
 @import './stylesheets/vars.scss';
 @import './stylesheets/fonts.scss';
@@ -9,5 +16,10 @@
 @import './pages/articles/articles.scss';
 @import './pages/archive/archive.scss';
 
+<<<<<<< HEAD
+@import './pages/articles/scrum/scrum.scss'
+>>>>>>> master
+=======
 @import './pages/articles/scrum/scrum.scss';
 @import './pages/archive/kz_fruit.scss';
+>>>>>>> master
