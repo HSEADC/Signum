@@ -1,0 +1,199 @@
+body {
+  background: #f2f2f2;
+  color: #fff;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  .left {
+    display: flex;
+    margin-right: 20vw;
+  }
+
+  .home {
+    .ad {
+      color: #111111;
+    }
+    color: #111111;
+    font-family: Akzidenz;
+    font-weight: 410;
+    font-style: normal;
+    font-size: 20px;
+
+    background-color: #d9d9d949;
+    width: 10.5vw;
+    height: 3.5vw;
+    border-radius: 20vw;
+    text-align: center;
+    padding-top: 1.2vw;
+  }
+  .home {
+    margin-right: 1vw;
+  }
+  .archive {
+    .ad {
+      color: #111111;
+    }
+    color: #111111;
+    font-family: Akzidenz;
+    font-weight: 410;
+    font-style: normal;
+    font-size: 20px;
+
+    background-color: #d9d9d949;
+    width: 11vw;
+    height: 3.5vw;
+    border-radius: 20vw;
+    text-align: center;
+    padding-top: 1.2vw;
+    transition: 0.2s;
+  }
+
+  .logo {
+    color: #ffffff;
+    font-family: Akzidenz;
+    font-weight: 410;
+    font-style: normal;
+    font-size: 20px;
+
+    background-color: #badc6e;
+    width: 11vw;
+    height: 3.5vw;
+    border-radius: 20vw;
+    text-align: center;
+    padding-top: 1.2vw;
+    margin-right: 30vw;
+  }
+
+  .contacts {
+    .ad {
+      color: #111111;
+    }
+    color: #111111;
+    font-family: Akzidenz;
+    font-weight: 410;
+    font-style: normal;
+    font-size: 20px;
+
+    background-color: #ffffff00;
+    outline-width: medium;
+    outline-style: solid;
+    outline-color: #a7a7a7;
+    width: 12.5vw;
+    height: 3.5vw;
+    border-radius: 20vw;
+    text-align: center;
+    padding-top: 1.2vw;
+  }
+  display: flex;
+  background-color: #f2f2f2;
+  position: fixed;
+  height: 6vw;
+  z-index: 1;
+  top: 0;
+  align-items: center;
+
+  .home:hover,
+  .archive:hover {
+    background-color: #b1b1b1;
+    transition: 0.2s;
+  }
+}
+
+.whowe {
+  position: absolute;
+  display: flex;
+  color: #111111;
+  flex-direction: column;
+  left: 3vw;
+  top: 10vw;
+  .whoweare {
+    font-family: Akzidenz;
+    font-weight: 410;
+    font-style: normal;
+    font-size: 60px;
+    margin-bottom: 4vw;
+  }
+  .recdev {
+    position: absolute;
+    background-color: #111111;
+    width: 36vw;
+    height: 0.1vw;
+    top: 5vw;
+  }
+  .team {
+    font-family: Akzidenz;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 2vw;
+  }
+}
+
+.bigarr {
+  background-image: url(../../images/bigarr.svg);
+  position: absolute;
+  width: 37vw;
+  height: 37vw;
+  top: 10vw;
+  right: 5vw;
+}
+
+.footer {
+  position: absolute;
+  background-color: #111111;
+  width: 100vw;
+  height: 18.2vw;
+  margin-top: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .foott {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 4vw;
+    font-family: Akzidenz;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+    .homep {
+      margin-bottom: 2vw;
+      color: #fff;
+    }
+    .homep:hover {
+      color: #badc6e;
+    }
+    .archivep {
+      margin-bottom: 2vw;
+      color: #fff;
+    }
+    .archivep:hover {
+      color: #badc6e;
+    }
+    .contactsp {
+      margin-bottom: 2vw;
+      color: #fff;
+    }
+    .contactsp:hover {
+      color: #badc6e;
+    }
+  }
+  .signumfoot {
+    background-image: url(../../images/signumаoot.svg);
+    width: 21.5vw;
+    height: 2.35vw;
+  }
+  .arrowf {
+    background-image: url(../../images/arrowа.svg);
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    top: 6vw;
+    left: 86vw;
+  }
+}

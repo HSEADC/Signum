@@ -31,6 +31,9 @@ body {
     text-align: center;
     padding-top: 1.2vw;
   }
+  .home {
+    margin-right: 1vw;
+  }
 
   .archive {
     .ad {
@@ -217,7 +220,7 @@ body {
   .arrow {
     background-image: url(../../images/arrow.svg);
     position: absolute;
-    width: 5.2vw;
+    width: 5vw;
     height: 5vw;
     top: 14vw;
     left: 47vw;
@@ -234,7 +237,7 @@ body {
   .slider {
     position: absolute;
     width: 37vw;
-    height: 11vw;
+    height: 10vw;
     border-radius: 2vw;
     background-image: url(../../images/slider.svg);
   }

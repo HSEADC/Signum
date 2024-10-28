@@ -14,6 +14,7 @@ module.exports = {
     home: './src/pages/home/home.js',
     archive: './src/pages/archive/archive.js',
     contacts: './src/pages/contacts/contacts.js',
+    kz_fruit: './src/pages/archive/kz_fruit.js',
     scrum: './src/pages/articles/scrum/scrum.js'
   },
   output: {

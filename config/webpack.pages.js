@@ -23,6 +23,11 @@ const htmlWebpackPlugins = [
     'contacts',
     'vendors'
   ]),
+
+  createPages('./src/pages/archive/kz_fruit.html', './kz_fruit.html', [
+    'kz_fruit',
+    'vendors'
+  ]),
   createPages(
     './src/pages/articles/scrum/scrum.html',
     './articles/scrum.html',
