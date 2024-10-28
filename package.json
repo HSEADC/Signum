@@ -2,7 +2,7 @@
   "name": "njb_study",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "machere13",
+  "author": "MuTKaTuK",
   "license": "MIT",
   "scripts": {
     "start": "webpack serve --open --config config/webpack.dev.js",
