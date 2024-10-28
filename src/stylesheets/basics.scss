@@ -1,11 +1,15 @@
 * {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
   box-sizing: border-box;
 }
 
 html,
 body {
   height: 100%;
+<<<<<<< HEAD
 }
 
 body {
@@ -51,4 +55,16 @@ body {
     font-size: 24px;
     font-weight: 400;
   }
+>>>>>>> master
+=======
+  scrollbar-color: rgb(186 220 110) rgb(255 255 255 / 0%);
+  scrollbar-width: thin;
+}
+
+body,
+h1 {
+  font-family: Rofora, serif;
+  font-size: 24px;
+  font-weight: 400;
+}
 >>>>>>> master

@@ -11,9 +11,10 @@ module.exports = {
   entry: {
     index: './src/index.js',
     articles: './src/pages/articles/articles.js',
-    about: './src/pages/about/about.js',
-    cases: './src/pages/cases/cases.js',
-    interactives: './src/pages/interactives/interactives.js',
+    home: './src/pages/home/home.js',
+    archive: './src/pages/archive/archive.js',
+    contacts: './src/pages/contacts/contacts.js',
+    kz_fruit: './src/pages/archive/kz_fruit.js',
     scrum: './src/pages/articles/scrum/scrum.js'
   },
   output: {
