@@ -19,7 +19,7 @@ module.exports = {
     },
     output: {
         filename: "[name].[contenthash].js",
-        path: path.join(process.cwd(), "build"),
+        path: path.join(process.cwd(), "docs"),
         clean: true
     },
     module: {
