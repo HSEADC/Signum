@@ -13,6 +13,10 @@ const htmlWebpackPlugins = [
         "index",
         "vendors"
     ]),
+    createPages("./src/pages/styleguide/styleguide.html", "./styleguide.html", [
+        "styleguide",
+        "vendors"
+    ]),
     createPages("./src/pages/articles/articles.html", "./articles.html", [
         "articles",
         "vendors"
