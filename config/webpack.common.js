@@ -10,6 +10,7 @@ const path = require("path");
 module.exports = {
     entry: {
         index: "./src/pages/index/index.js",
+        styleguide: "./src/pages/styleguide/styleguide.js",
         articles: "./src/pages/articles/articles.js",
         home: "./src/pages/home/home.js",
         archive: "./src/pages/archive/archive.js",
