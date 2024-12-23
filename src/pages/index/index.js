@@ -15,7 +15,7 @@ async function handleSubmit(event) {
     })
         .then((response) => {
             if (response.ok) {
-                status.innerHTML = "Thanks for your submission!";
+                status.innerHTML = "Спасибо за вашу заявку!";
                 form.reset();
             } else {
                 response.json().then((data) => {
@@ -25,13 +25,13 @@ async function handleSubmit(event) {
                             .join(", ");
                     } else {
                         status.innerHTML =
-                            "Oops! There was a problem submitting your form";
+                            "Упс, произошла проблема с отправкой";
                     }
                 });
             }
         })
         .catch((error) => {
-            status.innerHTML = "Oops! There was a problem submitting your form";
+            status.innerHTML = "Упс, произошла проблема с отправкой";
         });
 }
 form.addEventListener("submit", handleSubmit);
