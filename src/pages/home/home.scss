@@ -31,6 +31,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    bottom: 6em;
 
     padding: 2em 0 2em 0;
 
@@ -44,16 +46,16 @@ header {
         display: flex;
         align-content: center;
         justify-content: center;
-        align-items: center;
         flex-wrap: wrap;
         color: #2e3366;
-        font-size: 1.6vw;
+        font-size: 30px;
         font-family: Roboto;
         font-weight: 400;
         font-style: normal;
 
         .homepm {
             padding-right: 7vw;
+            margin-bottom: 2.5vw;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -68,15 +70,19 @@ header {
         }
         .archivepm {
             padding-right: 7vw;
+            margin-bottom: 2.5vw;
         }
         .aboutpm {
             padding-right: 7vw;
+            margin-bottom: 2.5vw;
         }
         .choicepm {
             padding-right: 7vw;
+            margin-bottom: 2.5vw;
         }
         .gamespm {
             padding-right: 7vw;
+            margin-bottom: 2.5vw;
         }
 
         .ad {
@@ -91,91 +97,182 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.pochta {
+    margin-bottom: 1.8em;
+    font-family: Roboto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 45px;
+    text-align: center;
+}
+#user-email {
+    font-size: 20px;
+    font-family: Roboto;
+    font-weight: 400;
+    font-style: normal;
+    width: 24em;
+    height: 2.2em;
+    border: inherit;
+    border-radius: 50vw;
+    padding-left: 3vw;
+    border-color: #2e3366;
+}
+#form {
+    color: #2e3366;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+#form-button {
+    position: absolute;
+    font-size: 40px;
+    font-family: Roboto;
+    font-weight: 700;
+    font-style: normal;
+    width: 2em;
+    height: 0.8em;
+    background-color: #2e3366;
+    right: 0.2em;
+    border: inherit;
+    border-radius: 50em;
+    border: #badc6e;
+    cursor: pointer;
+    transition: 0.2s;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #fff;
 
-    .pochta {
-        margin-bottom: 1.8em;
-        font-family: Roboto;
-        font-weight: 500;
-        font-style: normal;
-        font-size: 45px;
-        text-align: center;
+    #form-button:hover {
+        border: 4px black;
+        background-color: #6d76dc;
+        box-shadow: 0 0 0 0 #ff0000;
+        transition: 0.2s;
+    }
+}
 
-        #form {
-            color: #2e3366;
-            position: relative;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            justify-content: center;
+.firstslide {
+    display: flex;
+    flex-direction: row;
+
+    .herritage {
+        background-image: url(../../images/second/herritage.png);
+        display: flex;
+        width: 24em;
+        height: 14em;
+        border-radius: 1em;
+        margin-right: 2em;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-left: 2em;
+        padding-top: 2em;
+
+        .firsttext {
+            margin-bottom: 2em;
+            .lets {
+                font-size: 30px;
+                font-family: Roboto;
+                font-weight: 500;
+                font-style: normal;
+                margin-bottom: 1em;
+            }
+            .projects {
+                font-size: 20px;
+                font-family: Roboto;
+                font-weight: 400;
+                font-style: normal;
+            }
         }
-        #user-email {
+
+        .maild {
+            .mailm {
+                font-size: 20px;
+                font-family: Roboto;
+                font-weight: 400;
+                font-style: normal;
+                margin-bottom: 0.5em;
+            }
+        }
+    }
+
+    .who {
+        background-image: url(../../images/second/herritage.png);
+        display: flex;
+        width: 24em;
+        height: 14em;
+        border-radius: 1em;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .whoweare {
+            font-size: 60px;
+            font-family: Roboto;
+            font-weight: 400;
+            font-style: normal;
+            margin-bottom: 0.3em;
+        }
+        .recdev {
+            width: 12em;
+            height: 0.1em;
+            background-color: #ffffff;
+            border-radius: 10em;
+            margin-bottom: 1em;
+        }
+        .team {
             font-size: 20px;
             font-family: Roboto;
             font-weight: 400;
             font-style: normal;
-            width: 30em;
-            height: 3em;
-            border: inherit;
-            border-radius: 50vw;
-            padding-left: 3vw;
-            border-color: #2e3366;
-        }
-
-        #form-button {
-            position: absolute;
-            font-size: 40px;
-            font-family: Roboto;
-            font-weight: 700;
-            font-style: normal;
-            width: 2.5em;
-            height: 1.2em;
-            right: 0.2em;
-            border: inherit;
-            border-radius: 50em;
-            border: #badc6e;
-            background-color: #2e3366;
-            cursor: pointer;
-            transition: 0.2s;
-            display: flex;
-            align-content: center;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-
-            #form-button:hover {
-                border: 4px black;
-                background-color: #6d76dc;
-                box-shadow: 0 0 0 0 #ff0000;
-                transition: 0.2s;
-            }
+            margin-bottom: 0.5em;
         }
     }
 }
 
-@media (max-width: 480px) {
-    .menu {
+@media (max-width: 1140px) {
+    .firstslide {
         flex-direction: column;
-        align-items: flex-start;
-        font-size: 5vw;
 
-        .homepm {
-            padding-bottom: 2vw;
+        .herritage {
+            margin-right: 0em;
+            margin-bottom: 1.4em;
+        }
+        .who {
+            margin-right: 0em;
+        }
+    }
+}
 
-            .navi {
-                width: 16vw;
+@media (max-width: 720px) {
+    header {
+        position: relative;
+        right: 5em;
+        bottom: 6em;
+
+        .menu {
+            flex-direction: column;
+            font-size: 20px;
+            align-items: flex-start;
+
+            .homepm {
+                .navi {
+                    width: 16vw;
+                }
             }
-        }
-        .archivepm {
-            padding-bottom: 2vw;
-        }
-        .aboutpm {
-            padding-bottom: 2vw;
-        }
-        .choicepm {
-            padding-bottom: 2vw;
-        }
-        .gamespm {
-            padding-bottom: 2vw;
+            .archivepm {
+            }
+            .aboutpm {
+            }
+            .choicepm {
+            }
+            .gamespm {
+            }
         }
     }
 }

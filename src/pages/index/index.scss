@@ -58,55 +58,53 @@ main {
         font-style: normal;
         font-size: 45px;
         text-align: center;
+    }
+    #user-email {
+        font-size: 20px;
+        font-family: Roboto;
+        font-weight: 400;
+        font-style: normal;
+        width: 30em;
+        height: 3em;
+        border: inherit;
+        border-radius: 50vw;
+        padding-left: 3vw;
+        border-color: #2e3366;
+    }
+    #form {
+        color: #2e3366;
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #form-button {
+        position: absolute;
+        font-size: 40px;
+        font-family: Roboto;
+        font-weight: 700;
+        font-style: normal;
+        width: 2.5em;
+        height: 1.2em;
+        right: 0.2em;
+        border: inherit;
+        border-radius: 50em;
+        border: #badc6e;
+        background-color: #2e3366;
+        cursor: pointer;
+        transition: 0.2s;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
 
-        #form {
-            color: #2e3366;
-            position: relative;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            justify-content: center;
-        }
-        #user-email {
-            font-size: 20px;
-            font-family: Roboto;
-            font-weight: 400;
-            font-style: normal;
-            width: 30em;
-            height: 3em;
-            border: inherit;
-            border-radius: 50vw;
-            padding-left: 3vw;
-            border-color: #2e3366;
-        }
-
-        #form-button {
-            position: absolute;
-            font-size: 40px;
-            font-family: Roboto;
-            font-weight: 700;
-            font-style: normal;
-            width: 2.5em;
-            height: 1.2em;
-            right: 0.2em;
-            border: inherit;
-            border-radius: 50em;
-            border: #badc6e;
-            background-color: #2e3366;
-            cursor: pointer;
+        #form-button:hover {
+            border: 4px black;
+            background-color: #6d76dc;
+            box-shadow: 0 0 0 0 #ff0000;
             transition: 0.2s;
-            display: flex;
-            align-content: center;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-
-            #form-button:hover {
-                border: 4px black;
-                background-color: #6d76dc;
-                box-shadow: 0 0 0 0 #ff0000;
-                transition: 0.2s;
-            }
         }
     }
 }
