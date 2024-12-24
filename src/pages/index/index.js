@@ -30,8 +30,12 @@ async function handleSubmit(event) {
                 });
             }
         })
+
         .catch((error) => {
             status.innerHTML = "Упс, произошла проблема с отправкой";
+        })
+        .finally(() => {
+            setTimeout(() => (location.href = "./home.html"), 500);
         });
 }
 form.addEventListener("submit", handleSubmit);

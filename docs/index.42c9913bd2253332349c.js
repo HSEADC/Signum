@@ -41,6 +41,10 @@ function _handleSubmit() {
             }
           })["catch"](function (error) {
             status.innerHTML = "Упс, произошла проблема с отправкой";
+          })["finally"](function () {
+            setTimeout(function () {
+              return location.href = "./home.html";
+            }, 500);
           });
         case 4:
         case "end":
