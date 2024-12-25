@@ -1,358 +1,364 @@
 @use "../../stylesheets/commons.scss";
 
 body {
-    background: #f2f2f2;
-    color: #fff;
-    width: 100vw;
-    height: 100vh;
+    color: #f6f5f0;
+    width: 100%;
+    height: auto;
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    background-image: url(../../images/second/header.png),
+        url(../../images/second/footer.png);
+    background-size: contain, contain, cover;
+    background-position: top, bottom, top;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
 }
 
-.header {
-    .left {
-        display: flex;
-        margin-right: 20vw;
-    }
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
 
-    .home {
-        .ad {
-            color: #111111;
-        }
-        color: #111111;
-        font-family: Akzidenz;
-        font-weight: 410;
-        font-style: normal;
-        font-size: 20px;
-
-        background-color: #d9d9d949;
-        width: 10.5vw;
-        height: 3.5vw;
-        border-radius: 20vw;
-        text-align: center;
-        padding-top: 1.2vw;
-    }
-    .home {
-        margin-right: 1vw;
-    }
-    .archive {
-        .ad {
-            color: #111111;
-        }
-        color: #111111;
-        font-family: Akzidenz;
-        font-weight: 410;
-        font-style: normal;
-        font-size: 20px;
-
-        background-color: #d9d9d949;
-        width: 11vw;
-        height: 3.5vw;
-        border-radius: 20vw;
-        text-align: center;
-        padding-top: 1.2vw;
-        transition: 0.2s;
-    }
+    margin: 4em 0 2em 0;
 
     .logo {
-        color: #ffffff;
-        font-family: Akzidenz;
-        font-weight: 410;
-        font-style: normal;
-        font-size: 20px;
-
-        background-color: #badc6e;
-        width: 11vw;
-        height: 3.5vw;
-        border-radius: 20vw;
-        text-align: center;
-        padding-top: 1.2vw;
-        margin-right: 30vw;
+        width: 25vw;
+        pointer-events: none;
+        margin-bottom: 4vw;
     }
 
-    .contacts {
-        .ad {
-            color: #111111;
+    .menu {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        color: #2e3366;
+        font-size: 30px;
+        font-family: Roboto;
+        font-weight: 400;
+        font-style: normal;
+
+        .homepm {
+            padding-right: 7vw;
+            margin-bottom: 2.5vw;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
         }
-        color: #111111;
-        font-family: Akzidenz;
-        font-weight: 410;
-        font-style: normal;
-        font-size: 20px;
+        .archivepm {
+            padding-right: 7vw;
+            margin-bottom: 2.5vw;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
 
-        background-color: #ffffff00;
-        outline-width: medium;
-        outline-style: solid;
-        outline-color: #a7a7a7;
-        width: 12.5vw;
-        height: 3.5vw;
-        border-radius: 20vw;
-        text-align: center;
-        padding-top: 1.2vw;
+            .navi {
+                position: absolute;
+                width: 6vw;
+                z-index: -1;
+            }
+        }
+        .aboutpm {
+            padding-right: 7vw;
+            margin-bottom: 2.5vw;
+        }
+        .choicepm {
+            padding-right: 7vw;
+            margin-bottom: 2.5vw;
+        }
+        .gamespm {
+            padding-right: 7vw;
+            margin-bottom: 2.5vw;
+        }
+
+        .ad {
+            color: #2e3366;
+        }
     }
+}
+
+.signs {
     display: flex;
-    background-color: #f2f2f2;
-    position: fixed;
-    height: 6vw;
-    z-index: 1;
-    top: 0;
+    flex-direction: row;
     align-items: center;
-
-    .home:hover,
-    .archive:hover {
-        background-color: #b1b1b1;
-        transition: 0.2s;
-    }
-}
-
-.tarchive {
-    position: absolute;
-    color: #111111;
-    font-family: Akzidenz;
-    font-weight: 410;
-    font-style: normal;
-    font-size: 50px;
-    top: 9vw;
-}
-
-.allsign {
-    position: absolute;
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    top: 14vw;
+    align-content: center;
 
-    .eye {
-        position: absolute;
-        background-image: url(../../images/signs/eye.svg);
-        width: 2.6vw;
-        height: 2.6vw;
-        margin-left: 0.5vw;
-        top: 5.6vw;
-        color: #a7a7a700;
-        .npage {
-            display: block;
-            width: 2.6vw;
-            height: 2.6vw;
-        }
+    > .tilt {
+        width: 12.8em;
+        height: 15.2em;
+        margin-bottom: 4em;
+        margin-right: 2em;
+        margin-left: 2em;
+        padding-top: 16em;
+        background-repeat: no-repeat;
+    }
+    p {
+        color: #838383;
+        font-size: 20px;
+        font-family: Roboto;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .tilt {
+        transition: transform 0.2s ease;
     }
 
-    .kz_fruit {
-        background-image: url(../../images/signs/kz_fruit.webp);
-        width: 18.2vw;
-        height: 8.6vw;
-        margin-right: 1vw;
-        margin-bottom: 2vw;
-        border-radius: 0.5vw;
+    #kz_fruitpb {
+        background-image: url(../../images/signs/kz_fruitpb.png);
     }
-    .numb {
-        background-image: url(../../images/signs/537.webp);
-        width: 18.2vw;
-        height: 8.6vw;
-        margin-right: 1vw;
-        margin-bottom: 2vw;
-        border-radius: 0.5vw;
+    #numbers {
+        background-image: url(../../images/signs/537.png);
     }
-    .tm_kuz {
-        background-image: url(../../images/signs/tm_kuz.webp);
-        width: 18.2vw;
-        height: 8.6vw;
-        margin-right: 1vw;
-        margin-bottom: 2vw;
-        border-radius: 0.5vw;
+    #tm_kuz {
+        background-image: url(../../images/signs/tm_kuz.png);
     }
-    .dutroy {
-        background-image: url(../../images/signs/dutroy.webp);
-        width: 18.2vw;
-        height: 8.6vw;
-        margin-right: 1vw;
-        margin-bottom: 2vw;
-        border-radius: 0.5vw;
+    #dutroy {
+        background-image: url(../../images/signs/dutroy.png);
     }
-    .shot {
-        background-image: url(../../images/signs/shot.webp);
-        width: 18.2vw;
-        height: 8.6vw;
-        margin-right: 1vw;
-        margin-bottom: 2vw;
-        border-radius: 0.5vw;
+    #shot {
+        background-image: url(../../images/signs/shot.png);
     }
-    .artbread {
-        background-image: url(../../images/signs/artbread.webp);
-        width: 18.2vw;
-        height: 8.6vw;
-        margin-right: 1vw;
-        margin-bottom: 2vw;
-        border-radius: 0.5vw;
+    #artbread {
+        background-image: url(../../images/signs/artbread.png);
     }
-    .bread {
-        background-image: url(../../images/signs/bread.webp);
-        width: 18.2vw;
-        height: 8.6vw;
-        margin-right: 1vw;
-        margin-bottom: 2vw;
-        border-radius: 0.5vw;
+    #bread {
+        background-image: url(../../images/signs/bread.png);
     }
-    .teethd {
-        background-image: url(../../images/signs/teethd.webp);
-        width: 18.2vw;
-        height: 8.6vw;
-        margin-right: 1vw;
-        margin-bottom: 2vw;
-        border-radius: 0.5vw;
+    #teethd {
+        background-image: url(../../images/signs/teethd.png);
     }
-    .apteka {
-        background-image: url(../../images/signs/apteka.webp);
-        width: 18.2vw;
-        height: 8.6vw;
-        margin-right: 1vw;
-        margin-bottom: 2vw;
-        border-radius: 0.5vw;
+    #apteka {
+        background-image: url(../../images/signs/apteka.png);
     }
-    .freedom {
-        background-image: url(../../images/signs/freedom.webp);
-        width: 18.2vw;
-        height: 8.6vw;
-        margin-right: 1vw;
-        margin-bottom: 2vw;
-        border-radius: 0.5vw;
+    #freedom {
+        background-image: url(../../images/signs/freedom.png);
     }
-    .hometen {
-        background-image: url(../../images/signs/hometen.svg);
-        width: 18.2vw;
-        height: 8.6vw;
-        margin-right: 1vw;
-        margin-bottom: 2vw;
-        border-radius: 0.5vw;
+    #hometen {
+        background-image: url(../../images/signs/hometen.png);
     }
-    .idk {
-        background-image: url(../../images/signs/idk.webp);
-        width: 18.2vw;
-        height: 8.6vw;
-        margin-right: 1vw;
-        margin-bottom: 2vw;
-        border-radius: 0.5vw;
+    #wine {
+        background-image: url(../../images/signs/wine.png);
     }
-    .de_four {
-        background-image: url(../../images/signs/de_four.webp);
-        width: 18.2vw;
-        height: 8.6vw;
-        margin-right: 1vw;
-        margin-bottom: 2vw;
-        border-radius: 0.5vw;
+    #de_four {
+        background-image: url(../../images/signs/de_four.png);
     }
-    .jewelery {
-        background-image: url(../../images/signs/jewelery.webp);
-        width: 18.2vw;
-        height: 8.6vw;
-        margin-right: 1vw;
-        margin-bottom: 2vw;
-        border-radius: 0.5vw;
+    #jewelery {
+        background-image: url(../../images/signs/jewelery.png);
     }
-    .engeneer {
-        background-image: url(../../images/signs/engeneer.webp);
-        width: 18.2vw;
-        height: 8.6vw;
-        margin-right: 1vw;
-        margin-bottom: 2vw;
-        border-radius: 0.5vw;
+    #engeneer {
+        background-image: url(../../images/signs/engeneer.png);
     }
-    .zavod {
-        background-image: url(../../images/signs/zavod.webp);
-        width: 18.2vw;
-        height: 8.6vw;
-        margin-right: 1vw;
-        margin-bottom: 2vw;
-        border-radius: 0.5vw;
+    #zavod {
+        background-image: url(../../images/signs/zavod.png);
     }
-    .waterone {
-        background-image: url(../../images/signs/waterone.webp);
-        width: 18.2vw;
-        height: 8.6vw;
-        margin-right: 1vw;
-        margin-bottom: 2vw;
-        border-radius: 0.5vw;
+    #waterbroken {
+        background-image: url(../../images/signs/waterbroken.png);
     }
-    .watertwo {
-        background-image: url(../../images/signs/watertwo.webp);
-        width: 18.2vw;
-        height: 8.6vw;
-        margin-right: 1vw;
-        margin-bottom: 2vw;
-        border-radius: 0.5vw;
+    #water {
+        background-image: url(../../images/signs/water.png);
     }
-    .moscow {
-        background-image: url(../../images/signs/moscow.webp);
-        width: 18.2vw;
-        height: 8.6vw;
-        margin-right: 1vw;
-        margin-bottom: 2vw;
-        border-radius: 0.5vw;
+    #moscow {
+        background-image: url(../../images/signs/moscow.png);
     }
-    .bulochnaya {
-        background-image: url(../../images/signs/bulochnaya.webp);
-        width: 18.2vw;
-        height: 8.6vw;
-        margin-right: 1vw;
-        margin-bottom: 2vw;
-        border-radius: 0.5vw;
+    #bulochnaya {
+        background-image: url(../../images/signs/bulochnaya.png);
     }
 }
 
-.footer {
-    position: absolute;
-    background-color: #111111;
-    width: 100vw;
-    height: 18.2vw;
-    margin-top: 85%;
+footer {
+    width: 100%;
+    min-height: 26em;
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: center;
-    .foott {
+    flex-direction: column;
+
+    .logomini {
+        width: 16vw;
+        pointer-events: none;
+        margin-top: 4vw;
+    }
+
+    .menuf {
         display: flex;
-        flex-direction: column;
-        position: absolute;
-        left: 4vw;
-        font-family: Akzidenz;
-        font-weight: 500;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        color: #2e3366;
+        font-size: 30px;
+        font-family: Roboto;
+        font-weight: 400;
         font-style: normal;
-        font-size: 24px;
-        .homep {
-            margin-bottom: 2vw;
-            color: #fff;
+        margin-top: 8vw;
+
+        > div {
+            margin-bottom: 2.5vw;
+            margin-right: 2vw;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            background-color: #2e3366;
+            width: 8.5em;
+            height: 2em;
+            border-radius: 10em;
+
+            > a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+            }
         }
-        .homep:hover {
-            color: #badc6e;
-        }
-        .archivep {
-            margin-bottom: 2vw;
-            color: #fff;
-        }
-        .archivep:hover {
-            color: #badc6e;
-        }
-        .contactsp {
-            margin-bottom: 2vw;
-            color: #fff;
-        }
-        .contactsp:hover {
-            color: #badc6e;
+
+        .ad {
+            color: #ffffff;
         }
     }
-    .signumfoot {
-        background-image: url(../../images/signumаoot.svg);
-        width: 21.5vw;
-        height: 2.35vw;
+}
+
+@media (max-width: 1280px) {
+    footer {
+        min-height: 14em;
+
+        .menuf {
+            font-size: 24px;
+        }
     }
-    .arrowf {
-        background-image: url(../../images/arrowа.svg);
-        position: absolute;
-        width: 5vw;
-        height: 5vw;
-        top: 6vw;
-        left: 86vw;
+}
+
+@media (max-width: 720px) {
+    header {
+        align-items: flex-start;
+        margin-left: 4em;
+        .menu {
+            flex-direction: column;
+            font-size: 20px;
+            align-items: flex-start;
+
+            .homepm {
+            }
+            .archivepm {
+                .navi {
+                    width: 16vw;
+                }
+            }
+            .aboutpm {
+            }
+            .choicepm {
+            }
+            .gamespm {
+            }
+        }
+    }
+
+    footer {
+        min-height: 8em;
+
+        .menuf {
+            font-size: 15px;
+        }
+    }
+
+    .signs {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+
+        > .tilt {
+            width: 7em;
+            height: 11em;
+            margin-bottom: 2em;
+            margin-right: 1em;
+            margin-left: 1em;
+            padding-top: 8.4em;
+            background-repeat: no-repeat;
+        }
+        p {
+            color: #838383;
+            font-size: 18px;
+            font-family: Roboto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        #kz_fruitpb {
+            background-image: url(../../images/signs/mobile/kz_fruitpb.png);
+        }
+        #numbers {
+            background-image: url(../../images/signs/mobile/537.png);
+        }
+        #tm_kuz {
+            background-image: url(../../images/signs/mobile/tm_kuz.png);
+        }
+        #dutroy {
+            background-image: url(../../images/signs/mobile/dutroy.png);
+        }
+        #shot {
+            background-image: url(../../images/signs/mobile/shot.png);
+        }
+        #artbread {
+            background-image: url(../../images/signs/mobile/artbread.png);
+        }
+        #bread {
+            background-image: url(../../images/signs/mobile/bread.png);
+        }
+        #teethd {
+            background-image: url(../../images/signs/mobile/teethd.png);
+        }
+        #apteka {
+            background-image: url(../../images/signs/mobile/apteka.png);
+        }
+        #freedom {
+            background-image: url(../../images/signs/mobile/freedom.png);
+        }
+        #hometen {
+            background-image: url(../../images/signs/mobile/hometen.png);
+        }
+        #wine {
+            background-image: url(../../images/signs/mobile/wine.png);
+        }
+        #de_four {
+            background-image: url(../../images/signs/mobile/de_four.png);
+        }
+        #jewelery {
+            background-image: url(../../images/signs/mobile/jewelery.png);
+        }
+        #engeneer {
+            background-image: url(../../images/signs/mobile/engeneer.png);
+        }
+        #zavod {
+            background-image: url(../../images/signs/mobile/zavod.png);
+        }
+        #waterbroken {
+            background-image: url(../../images/signs/mobile/waterbroken.png);
+        }
+        #water {
+            background-image: url(../../images/signs/mobile/water.png);
+        }
+        #moscow {
+            background-image: url(../../images/signs/mobile/moscow.png);
+        }
+        #bulochnaya {
+            background-image: url(../../images/signs/mobile/bulochnaya.png);
+        }
     }
 }

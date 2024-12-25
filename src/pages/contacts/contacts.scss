@@ -1,201 +1,282 @@
 @use "../../stylesheets/commons.scss";
 
 body {
-    background: #f2f2f2;
-    color: #fff;
-    width: 100vw;
-    height: 100vh;
+    color: #f6f5f0;
+    width: 100%;
+    height: auto;
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    background-image: url(../../images/second/header.png),
+        url(../../images/second/footer.png);
+    background-size: contain, contain, cover;
+    background-position: top, bottom, top;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
 }
 
-.header {
-    .left {
-        display: flex;
-        margin-right: 20vw;
-    }
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
 
-    .home {
-        .ad {
-            color: #111111;
-        }
-        color: #111111;
-        font-family: Akzidenz;
-        font-weight: 410;
-        font-style: normal;
-        font-size: 20px;
-
-        background-color: #d9d9d949;
-        width: 10.5vw;
-        height: 3.5vw;
-        border-radius: 20vw;
-        text-align: center;
-        padding-top: 1.2vw;
-    }
-    .home {
-        margin-right: 1vw;
-    }
-    .archive {
-        .ad {
-            color: #111111;
-        }
-        color: #111111;
-        font-family: Akzidenz;
-        font-weight: 410;
-        font-style: normal;
-        font-size: 20px;
-
-        background-color: #d9d9d949;
-        width: 11vw;
-        height: 3.5vw;
-        border-radius: 20vw;
-        text-align: center;
-        padding-top: 1.2vw;
-        transition: 0.2s;
-    }
+    margin: 4em 0 2em 0;
 
     .logo {
-        color: #ffffff;
-        font-family: Akzidenz;
-        font-weight: 410;
-        font-style: normal;
-        font-size: 20px;
-
-        background-color: #badc6e;
-        width: 11vw;
-        height: 3.5vw;
-        border-radius: 20vw;
-        text-align: center;
-        padding-top: 1.2vw;
-        margin-right: 30vw;
-    }
-
-    .contacts {
-        .ad {
-            color: #111111;
-        }
-        color: #111111;
-        font-family: Akzidenz;
-        font-weight: 410;
-        font-style: normal;
-        font-size: 20px;
-
-        background-color: #ffffff00;
-        outline-width: medium;
-        outline-style: solid;
-        outline-color: #a7a7a7;
-        width: 12.5vw;
-        height: 3.5vw;
-        border-radius: 20vw;
-        text-align: center;
-        padding-top: 1.2vw;
-    }
-    display: flex;
-    background-color: #f2f2f2;
-    position: fixed;
-    height: 6vw;
-    z-index: 1;
-    top: 0;
-    align-items: center;
-
-    .home:hover,
-    .archive:hover {
-        background-color: #b1b1b1;
-        transition: 0.2s;
-    }
-}
-
-.whowe {
-    position: absolute;
-    display: flex;
-    color: #111111;
-    flex-direction: column;
-    left: 3vw;
-    top: 10vw;
-    .whoweare {
-        font-family: Akzidenz;
-        font-weight: 410;
-        font-style: normal;
-        font-size: 60px;
+        width: 25vw;
+        pointer-events: none;
         margin-bottom: 4vw;
     }
-    .recdev {
-        position: absolute;
-        background-color: #111111;
-        width: 36vw;
-        height: 0.1vw;
-        top: 5vw;
-    }
-    .team {
-        font-family: Akzidenz;
+
+    .menu {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        color: #2e3366;
+        font-size: 30px;
+        font-family: Roboto;
         font-weight: 400;
         font-style: normal;
-        font-size: 25px;
-        line-height: 2vw;
+
+        .homepm {
+            padding-right: 7vw;
+            margin-bottom: 2.5vw;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+        }
+        .archivepm {
+            padding-right: 7vw;
+            margin-bottom: 2.5vw;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+        }
+        .aboutpm {
+            padding-right: 7vw;
+            margin-bottom: 2.5vw;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+
+            .navi {
+                position: absolute;
+                width: 6vw;
+                z-index: -1;
+            }
+        }
+        .choicepm {
+            padding-right: 7vw;
+            margin-bottom: 2.5vw;
+        }
+        .gamespm {
+            padding-right: 7vw;
+            margin-bottom: 2.5vw;
+        }
+
+        .ad {
+            color: #2e3366;
+        }
     }
 }
 
-.bigarr {
-    background-image: url(../../images/bigarr.svg);
-    position: absolute;
-    width: 37vw;
-    height: 37vw;
-    top: 10vw;
-    right: 5vw;
-}
-
-.footer {
-    position: absolute;
-    background-color: #111111;
-    width: 100vw;
-    height: 18.2vw;
-    margin-top: 85%;
+.info {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    .foott {
+
+    .abouttext {
         display: flex;
-        flex-direction: column;
-        position: absolute;
-        left: 4vw;
-        font-family: Akzidenz;
-        font-weight: 500;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        width: 40em;
+        height: fit-content;
+        padding-top: 5em;
+
+        .taboutus {
+            color: #2e3366;
+            font-size: 80px;
+            font-family: Roboto;
+            font-weight: 400;
+            font-style: normal;
+            margin-bottom: 0.4em;
+        }
+        .devide {
+            width: 40em;
+            height: 0.2em;
+            background-color: #2e3366;
+            margin-bottom: 1em;
+        }
+        .weare {
+            color: #2e3366;
+            font-size: 30px;
+            font-family: Roboto;
+            font-weight: 400;
+            font-style: normal;
+        }
+    }
+
+    .aboutuspic {
+        background-image: url(../../images/second/aboutus.png);
+        width: 28em;
+        height: 34em;
+        background-repeat: no-repeat;
+    }
+}
+
+footer {
+    width: 100%;
+    min-height: 26em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    .logomini {
+        width: 16vw;
+        pointer-events: none;
+        margin-top: 4vw;
+    }
+
+    .menuf {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        color: #2e3366;
+        font-size: 30px;
+        font-family: Roboto;
+        font-weight: 400;
         font-style: normal;
-        font-size: 24px;
-        .homep {
-            margin-bottom: 2vw;
-            color: #fff;
+        margin-top: 8vw;
+
+        > div {
+            margin-bottom: 2.5vw;
+            margin-right: 2vw;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            background-color: #2e3366;
+            width: 8.5em;
+            height: 2em;
+            border-radius: 10em;
+
+            > a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+            }
         }
-        .homep:hover {
-            color: #badc6e;
-        }
-        .archivep {
-            margin-bottom: 2vw;
-            color: #fff;
-        }
-        .archivep:hover {
-            color: #badc6e;
-        }
-        .contactsp {
-            margin-bottom: 2vw;
-            color: #fff;
-        }
-        .contactsp:hover {
-            color: #badc6e;
+
+        .ad {
+            color: #ffffff;
         }
     }
-    .signumfoot {
-        background-image: url(../../images/signumаoot.svg);
-        width: 21.5vw;
-        height: 2.35vw;
+}
+
+@media (max-width: 1280px) {
+    footer {
+        min-height: 14em;
+
+        .menuf {
+            font-size: 24px;
+        }
     }
-    .arrowf {
-        background-image: url(../../images/arrowа.svg);
-        position: absolute;
-        width: 5vw;
-        height: 5vw;
-        top: 6vw;
-        left: 86vw;
+
+    .info {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .abouttext {
+            padding-top: 4em;
+            padding-bottom: 2em;
+            width: 30em;
+
+            .taboutus {
+                font-size: 60px;
+            }
+            .devide {
+                width: 35em;
+                height: 0.15em;
+            }
+            .weare {
+                font-size: 26px;
+            }
+        }
+
+        .aboutuspic {
+            margin-bottom: 2em;
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    header {
+        align-items: flex-start;
+        margin-left: 4em;
+        .menu {
+            flex-direction: column;
+            font-size: 20px;
+            align-items: flex-start;
+
+            .homepm {
+            }
+            .archivepm {
+            }
+            .aboutpm {
+                .navi {
+                    width: 16vw;
+                }
+            }
+            .choicepm {
+            }
+            .gamespm {
+            }
+        }
+    }
+
+    .info {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+
+        .abouttext {
+            padding-top: 4em;
+            padding-bottom: 2em;
+            width: 21em;
+
+            .taboutus {
+                font-size: 40px;
+            }
+            .devide {
+                width: 30em;
+                height: 0.1em;
+            }
+            .weare {
+                font-size: 20px;
+            }
+        }
+
+        .aboutuspic {
+            margin-bottom: 2em;
+        }
     }
 }
